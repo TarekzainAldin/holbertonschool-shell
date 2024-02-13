@@ -1,3 +1,18 @@
 #!/bin/bash
-echo "Best School" > "\\*\\'"Best\ School"\'\\*$\?\*\*\*\*\*:)"
+
+# Text to be written to the file
+text="Best School"
+
+# File name
+file_name="\\*\\'\"Best School\"'\\*\?\*\*\*\*\*:)"
+
+# Create the file with the specified text and a newline character
+echo -e "$text\n" > "$file_name"
+
+# Display a message indicating that the file has been created
+echo "File '$file_name' created with content: $text"
+
+# Display the last 5 characters of the file
+tail -c 5 "$file_name"
+
                                                                                                                                                                                                                                                               
